@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>وب سایت آموزش برنامه نویسی</title>
 </head>
 <body>
@@ -12,7 +13,8 @@
         <a href="#">
             <img src="./images/logo.png" alt="Logo">
         </a>
-        <div class="nav_links">
+        <div class="nav_links" id="navLinks">
+            <span onclick="close_menu()" class="far fa-window-close icon"></span>
             <ul>
                 <li>
                     <a href="#">صفحه اصلی</a>
@@ -28,6 +30,7 @@
                 </li>
             </ul>
         </div>
+        <span onclick="open_menu()" class="fas fa-bars icon"></span>
     </nav>
     <div class="text_box">
         <h1>وب سایت آموزش برنامه نویسی</h1>
@@ -37,5 +40,15 @@
         <a class="hero_btn" href="">شروع برنامه نویسی</a>
     </div>
 </section>
+<script>
+    let navLink=document.getElementById("navLinks");
+    function open_menu(){
+        navLink.style.right="0";
+    }
+
+    function close_menu(){
+        navLink.style.right="-200px";
+    }
+</script>
 </body>
 </html>
