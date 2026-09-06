@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>وب سایت آموزش برنامه نویسی</title>
 </head>
 <body>
+
+<!-- Header -->
+
 <section class="header">
     <nav>
         <a href="#">
             <img src="./images/logo.png" alt="Logo">
         </a>
         <div class="nav_links" id="navLinks">
-            <span onclick="close_menu()" class="far fa-window-close icon"></span>
+            <span onclick="close_menu()" class="fa fa-window-close icon"></span>
             <ul>
                 <li>
                     <a href="#">صفحه اصلی</a>
@@ -30,7 +33,7 @@
                 </li>
             </ul>
         </div>
-        <span onclick="open_menu()" class="fas fa-bars icon"></span>
+        <span onclick="open_menu()" class="fa fa-bars icon"></span>
     </nav>
     <div class="text_box">
         <h1>وب سایت آموزش برنامه نویسی</h1>
@@ -40,14 +43,46 @@
         <a class="hero_btn" href="">شروع برنامه نویسی</a>
     </div>
 </section>
+
+<!-- Courses -->
+
+<section class="course">
+    <h1>دوره های آموزشی</h1>
+    <p>در این قسمت شما آخرین دوره های وب سایت را میتوانید مشاهده نمایید</p>
+
+    <div class="row">
+        <div class="course_col">
+            <h3>جاوا اسکریپت</h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                متون لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                متون</p>
+        </div>
+        <div class="course_col">
+            <h3>ری اکت جی اس</h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                متون متون</p>
+        </div>
+        <div class="course_col">
+            <h3>تایپ اسکریپت</h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و
+                متون متون</p>
+        </div>
+    </div>
+</section>
+
+<!-- Scripts -->
+
 <script>
-    let navLink=document.getElementById("navLinks");
-    function open_menu(){
-        navLink.style.right="0";
+    let navLink = document.getElementById("navLinks");
+
+    function open_menu() {
+        navLink.style.right = "0";
     }
 
-    function close_menu(){
-        navLink.style.right="-200px";
+    function close_menu() {
+        navLink.style.right = "-200px";
     }
 </script>
 </body>
